@@ -35,7 +35,7 @@ jobs:
   refresh:
     # Without this, every fork of this repository runs the same schedule against the
     # same public APIs and gets everyone's shared runner IPs rate-limited.
-    if: github.repository == 'TGX-UM/tgx-outputs'
+    if: github.repository == 'cdk/cdk-outputs'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
