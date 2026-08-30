@@ -4,6 +4,7 @@ cdk,package,repo1.maven.org/org.openscience.cdk:cdk-bundle,
 cdk,rsd,cdk,
 cdk,paper,10.1021/ci025584y,"CDK, J Chem Inf Comput Sci 2003"
 cdk,paper,10.2174/138161206777585274,"CDK recent developments, 2006"
+cdk,paper,10.1186/1758-2946-6-3,"Ring perception, J Cheminform 2014"
 cdk,paper,10.1186/s13321-017-0220-4,"CDK v2.0, J Cheminform 2017"
 cdk,package,cran.r-project.org/rcdk,
 cdk,package,pypi.org/CDK-pywrapper,
@@ -13,3 +14,9 @@ cdkdepict,docker,simolecule/cdkdepict/,
 jchempaint,repo,jchempaint/jchempaint,
 jchempaint,paper,10.3390/50100093,"JChemPaint, Molecules 2000"
 jchempaint,package,flathub.org/io.github.jchempaint.JChemPaint,
+knimecdk,repo,cdk/nodes4knime-cdk2,
+knimecdk,repo,cdk/nodes4knime-cdk,
+knimecdk,paper,10.1186/1471-2105-14-257,"KNIME-CDK: Workflow-driven cheminformatics, BMC Bioinformatics 2013"
+scaffolds,repo,,
+scaffolds,paper,10.1186/s13321-022-00656-x,"Scaffold Generator: a Java library implementing molecular scaffold functionalities, J Cheminform 2022"
+scaffolds,package,repo1.maven.org/org.openscience.cdk:cdk-scaffolds,

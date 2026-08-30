@@ -2,3 +2,5 @@ id,name,what,mark,logo
 cdk,Chemistry Development Kit,"Java library for cheminformatics: structure handling, fingerprints, descriptors. Widely used well beyond this department.",CDK,cdk.png
 cdkdepict,CDK Depict,"Generate depictions of molecules and reactions from SMILES or SDF.",CD,cdkdepict.png
 jchempaint,JChemPaint,"Chemical 2D structure editor application/applet based on the Chemistry Development Kit.",JCP,jcplogo.png
+knimecdk,KNIME-CDK,"CDK Nodes for KNIME",KN,
+scaffolds,CDK Scaffolds,"Scaffold Functionalities for the Chemistry Development Kit (CDK)",SC,
