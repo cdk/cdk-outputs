@@ -18,7 +18,7 @@ knimecdk,repo,cdk/nodes4knime,
 knimecdk,paper,10.1186/1471-2105-14-257,"KNIME-CDK: Workflow-driven cheminformatics, BMC Bioinformatics 2013"
 scaffolds,repo,,
 scaffolds,paper,10.1186/s13321-022-00656-x,"Scaffold Generator: a Java library implementing molecular scaffold functionalities, J Cheminform 2022"
-scaffolds,package,repo1.maven.org/org.openscience.cdk:cdk-scaffolds,
+scaffolds,package,repo1.maven.org/org.openscience.cdk:cdk-scaffold,
 cdkpywrap,repo,OlivierBeq/CDK_pywrapper,
 cdkpywrap,package,pypi.org/CDK-pywrapper,
 cdkr,package,cran.r-project.org/rcdk,
