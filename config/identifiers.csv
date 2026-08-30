@@ -7,8 +7,8 @@ cdk,paper,10.2174/138161206777585274,"CDK recent developments, 2006"
 cdk,paper,10.1186/1758-2946-6-3,"Ring perception, J Cheminform 2014"
 cdk,paper,10.1186/s13321-017-0220-4,"CDK v2.0, J Cheminform 2017"
 cdk,package,packages.debian.org/libcdk-java,
-cdk,package,anaconda.org/channels/cf-staging/packages/cdk
-cdk,package,anaconda.org/channels/cf-staging/packages/cdk-inchi-to-svg,
+cdk,package,anaconda.org/cdk
+cdk,package,anaconda.org/cdk-inchi-to-svg,
 cdkdepict,repo,cdk/depict,
 cdkdepict,docker,simolecule/cdkdepict/,
 jchempaint,repo,jchempaint/jchempaint,
@@ -24,4 +24,4 @@ cdkpywrap,repo,OlivierBeq/CDK_pywrapper,
 cdkpywrap,package,pypi.org/CDK-pywrapper,
 cdkr,package,cran.r-project.org/rcdk,
 cdkr,repo,CDK-R/cdkr,
-cdkr,package,anaconda.org/channels/cf-staging/packages/r-rcdk,
+cdkr,package,anaconda.org/r-rcdk,
