@@ -8,6 +8,7 @@ cdk,paper,10.1186/1758-2946-6-3,"Ring perception, J Cheminform 2014"
 cdk,paper,10.1186/s13321-017-0220-4,"CDK v2.0, J Cheminform 2017"
 cdk,package,debian-13/cdk,
 cdk,package,ubuntu-24.04/cdk,
+cdk,package,conda-forge.org/cdk,
 cdkdepict,repo,cdk/depict,
 cdkdepict,docker,simolecule/cdkdepict/,
 jchempaint,repo,jchempaint/jchempaint,
@@ -16,11 +17,11 @@ jchempaint,package,flathub.org/io.github.jchempaint.JChemPaint,
 knimecdk,repo,cdk/nodes4knime-cdk2,
 knimecdk,repo,cdk/nodes4knime,
 knimecdk,paper,10.1186/1471-2105-14-257,"KNIME-CDK: Workflow-driven cheminformatics, BMC Bioinformatics 2013"
-scaffolds,repo,,
+scaffolds,repo,cdk/cdk-scaffold,
 scaffolds,paper,10.1186/s13321-022-00656-x,"Scaffold Generator: a Java library implementing molecular scaffold functionalities, J Cheminform 2022"
 scaffolds,package,repo1.maven.org/org.openscience.cdk:cdk-scaffold,
 cdkpywrap,repo,OlivierBeq/CDK_pywrapper,
 cdkpywrap,package,pypi.org/CDK-pywrapper,
 cdkr,package,cran.r-project.org/rcdk,
 cdkr,repo,CDK-R/cdkr,
-cdkr,package,conda-forge/r-rcdk,
+cdkr,package,conda-forge.org/r-rcdk,
