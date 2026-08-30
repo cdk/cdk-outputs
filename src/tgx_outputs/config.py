@@ -53,7 +53,7 @@ KINDS = {
 }
 
 REGISTRIES = {"bioconductor.org", "pypi.org", "npmjs.org", "cran.r-project.org",
-              "repo1.maven.org", "conda-forge.org"}
+              "repo1.maven.org", "conda-forge.org", "debian-13", "ubuntu-24.04"}
 
 COLUMNS = {
     "projects.csv": ["id", "name", "what", "mark", "logo"],

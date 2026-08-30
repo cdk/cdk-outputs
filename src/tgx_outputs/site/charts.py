@@ -36,6 +36,8 @@ REGISTRY_NAMES = {
     "cran.r-project.org": "CRAN",
     "repo1.maven.org": "Maven",
     "conda-forge.org": "conda-forge",
+    "debian-13": "Debian 13 (Trixie)",
+    "ubuntu-24.04": "Ubuntu 24.04",
 }
 
 def _registry_label() -> str:

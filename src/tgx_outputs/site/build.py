@@ -269,6 +269,8 @@ REGISTRY_URLS = {
     "repo1.maven.org": ("Maven Central",
                         "https://central.sonatype.com/artifact/{group}/{artifact}"),
     "conda-forge.org": ("conda-forge", "https://anaconda.org/conda-forge/{name}"),
+    "debian-13": ("Debian 13 (Trixie)", "https://packages.debian.org/search?suite=trixie&keywords={name}"),
+    "ubuntu-24.04": ("Ubuntu 24.04", "https://packages.ubuntu.com/search?suite=noble&keywords={name}"),
 }
 
 

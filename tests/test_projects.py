@@ -3,7 +3,7 @@
 from tgx_outputs import config as cfg
 
 REGISTRIES = {"bioconductor.org", "pypi.org", "npmjs.org", "cran.r-project.org",
-              "repo1.maven.org", "conda-forge.org"}
+              "repo1.maven.org", "conda-forge.org", "debian-13", "ubuntu-24.04"}
 
 
 def test_every_project_has_the_required_fields():
