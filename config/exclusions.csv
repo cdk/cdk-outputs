@@ -1,6 +1,1 @@
 kind,value,reason
-packages,npmjs.org/eweitz-pvjs,A personal fork of pvjs republished under another name; not a department release.
-packages,pypi.org/scholia,Not Scholia. The name on PyPI belongs to an unrelated marking-aid library; Scholia itself is installed from git and publishes to no registry.
-packages,npmjs.org/scholia,Not Scholia. The name on npm belongs to an unrelated markdown previewer.
-dois,10.3897/rio.8.e94771,"Scholia for Software is a funded grant proposal describing work to be done, not a description of the tool as built, and the project does not list it as a reference."
-dois,10.22439/revy.v45i3.6687,A Danish library trade-magazine piece about Wikidata and Scholia rather than a description of the software; the project does not list it as a reference.

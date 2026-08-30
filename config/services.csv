@@ -1,11 +1,1 @@
 project,name,url,what
-bridgedb,BridgeDb webservice,https://webservice.bridgedb.org,"Live identifier mapping over HTTP, for anything that cannot ship a database."
-bridgedb,Mapping databases,https://data.bridgedb.org,"Per-species mapping files, rebuilt from the primary databases and deposited with a DOI. These are department output, not a third party's data."
-wikipathways,WikiPathways SPARQL endpoint,https://sparql.wikipathways.org,The RDF layer the department builds from the pathway content and serves as queryable linked data. The pathways themselves are curated by the community.
-wikipathways,wikipathways.org,https://www.wikipathways.org,"The pathway database itself, which the department co-founded and helps run."
-r-odaf,R-ODAF,https://r-odaf.nl,"The analysis app, hosted so it can be used without installing anything."
-vhp,VHP4Safety platform,https://platform.vhp4safety.nl,One entry point to the chemical safety services the consortium runs.
-aopwiki-rdf,AOP-Wiki SPARQL endpoint,https://aopwiki.rdf.bigcat-bioinformatics.org/sparql,"The AOP-Wiki as queryable RDF, one named graph per release."
-aopwiki-rdf,AOP-Wiki RDF dashboard,https://aopwiki-dashboard.vhp4safety.nl,"Charts of the RDF, every one showing the SPARQL query behind it."
-molaop,molAOP Builder,https://molaop-builder.vhp4safety.nl,"Curate key event to pathway mappings, with a confidence assessment."
-molaop,molAOP Analyser,https://molaop-analyser.vhp4safety.nl,Analyse the resulting molecular AOPs.

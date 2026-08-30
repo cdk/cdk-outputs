@@ -1,2 +1,1 @@
 kind,value,field,to,reason
-paper,10.1021/ci050400b,title,The Blue Obelisk—Interoperability in Chemical Informatics,"ACS published a literal ? where an em dash belongs, and Crossref and OpenAlex both carry it verbatim; there is no upstream to re-fetch a correct title from."

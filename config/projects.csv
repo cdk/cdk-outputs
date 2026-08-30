@@ -1,18 +1,3 @@
 id,name,what,mark,logo
-bridgedb,BridgeDb,"Maps identifiers between biological databases, so that one gene or metabolite can be recognised across resources that each name it differently.",BD,bridgedb.png
-wikipathways,WikiPathways,"An open, community-curated pathway database. The department maintains its semantic layer and the clients most people actually use.",WP,wikipathways.svg
-pathvisio,PathVisio,"Desktop editor for biological pathways, and the origin of the GPML format.",PV,pathvisio.png
 cdk,Chemistry Development Kit,"Java library for cheminformatics: structure handling, fingerprints, descriptors. Widely used well beyond this department.",CDK,cdk.png
-bacting,Bacting,"Scriptable cheminformatics and bioinformatics, usable from Java and Python.",BA,
-arrayanalysis,ArrayAnalysis,Transcriptomics analysis workflows and quality control for microarray and RNA-seq data.,AA,arrayanalysis.png
-r-odaf,R-ODAF,"Reproducible RNA-seq differential expression analysis, packaged as a Shiny app for regulatory toxicogenomics.",RO,
-vhp,Virtual Human Platform,The VHP4Safety portal: a single entry point to the chemical safety assessment services the consortium runs.,VHP,vhp.png
-aopwiki-rdf,AOP-Wiki RDF,"Converts the AOP-Wiki to RDF, versions every release as its own named graph, and serves it over a public SPARQL endpoint with a query interface and dashboard.",AW,aopwiki-rdf.png
-molaop,molAOP Builder and Analyser,"Maps Adverse Outcome Pathway key events onto molecular pathways, and analyses the resulting molecular AOPs.",MA,molaop.png
-biodatafuse,pyBiodatafuse,"Queries many biomedical databases at once and merges what comes back into a single knowledge graph, so a gene or compound list can be annotated from all of them in one step.",BDF,biodatafuse.png
-sec2pri,pysec2pri,"Generates and use secondary identifier and symbol/label mapping sets for life sciences databases.",S2P,
-rdfsolve,rdfsolve,"Mine typed RDF schemas, convert between formats, and derive cross-dataset mappings.",RS,
-blue-obelisk,Blue Obelisk,"International team of chemists who share a belief in the concepts of Open Data, Open Standards, and Open Source (ODOSOS) (but not necessarily Open Access).",BO,blue-obelisk.png
-scholia,Scholia,"Builds profile pages for researchers, topics, journals and chemicals out of what Wikidata already records, so the works, citations and co-authors behind a name can be read without writing a query.",SC,scholia.png
-nanojava,NanoJava,"Minimal cheminformatics Java library for nanomaterials.",NJ,
-jqudt,jQUDT,"Java library to handle units and convert quantities.",QUDT,
+jchempaint,JChemPaint,"Chemical 2D structure editor application/applet based on the Chemistry Development Kit",JCP,

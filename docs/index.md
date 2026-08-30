@@ -5,7 +5,7 @@ hide:
 
 # Overview
 
-The software and data resources of the Department of Translational Genomics, collected
+The software and data resources of the Chemistry Development Kit ecosystem, collected
 once a week from public sources.
 
 --8<-- "freshness_brief.md"

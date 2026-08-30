@@ -1,11 +1,3 @@
 project,label,url
-bridgedb,Website,https://www.bridgedb.org
-wikipathways,Website,https://www.wikipathways.org
-pathvisio,Website,https://pathvisio.org
-cdk,Website,https://cdk.github.io
-arrayanalysis,Website,https://www.arrayanalysis.org
-r-odaf,Website,https://r-odaf.nl
-aopwiki-rdf,SNORQL query interface,https://aopwiki.rdf.bigcat-bioinformatics.org/
-scholia,Website,https://scholia.toolforge.org
-scholia,Documentation,https://scholia.readthedocs.io/en/latest/
-scholia,Wikidata project page,https://www.wikidata.org/wiki/Wikidata:Scholia
+cdk,Website,https://cdk.github.io/
+jchempaint,Website,https://jchempaint.github.io/
