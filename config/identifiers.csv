@@ -15,7 +15,7 @@ jchempaint,repo,jchempaint/jchempaint,
 jchempaint,paper,10.3390/50100093,"JChemPaint, Molecules 2000"
 jchempaint,package,flathub.org/io.github.jchempaint.JChemPaint,
 knimecdk,repo,cdk/nodes4knime-cdk2,
-knimecdk,repo,cdk/nodes4knime-cdk,
+knimecdk,repo,cdk/nodes4knime,
 knimecdk,paper,10.1186/1471-2105-14-257,"KNIME-CDK: Workflow-driven cheminformatics, BMC Bioinformatics 2013"
 scaffolds,repo,,
 scaffolds,paper,10.1186/s13321-022-00656-x,"Scaffold Generator: a Java library implementing molecular scaffold functionalities, J Cheminform 2022"
