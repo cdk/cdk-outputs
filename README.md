@@ -1,25 +1,13 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/images/tgx-logo-white.png">
-  <img src="docs/assets/images/tgx-logo.png" alt="Department of Translational Genomics" height="56">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/images/logos/cdk.png">
+  <img src="docs/assets/images/logos/cdk.png" alt="Chemistry Development Kit" height="56">
 </picture>
 
-# TGX Outputs
+# CDK Outputs
 
-**[tgx-um.github.io/tgx-outputs](https://tgx-um.github.io/tgx-outputs/)**
+**[cdk.github.io/cdk-outputs](https://cdk-um.github.io/cdk-outputs/)**
 
-The software, data resources and services the Department of Translational Genomics at
-Maastricht University builds — collected automatically from public sources once a week
-and published as a static page.
-
-That output is spread across nine GitHub organisations, four package registries, a
-handful of SPARQL endpoints and a set of deposited datasets. Nobody could previously
-answer "what did TGX ship this year" without a week of digging, and annual reports,
-grant renewals and consortium reviews all need that answer.
-
-Its shape — a grid of per-source totals over a per-project table — follows
-[RECETOX/specdatri_reporting](https://github.com/RECETOX/specdatri_reporting) (MIT), which
-solved the same problem for a research infrastructure first. This is an independent
-implementation rather than a fork; see [Prior art](#prior-art).
+The software, data resources and services from the Chemistry Development Kit ecosystem.
 
 ## What this is not
 

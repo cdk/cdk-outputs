@@ -1,10 +1,9 @@
 site_name: Software & services
 site_description: >-
-  The software, data resources and services the Department of Translational Genomics at
-  Maastricht University builds — collected automatically from public sources.
-site_url: https://tgx-um.github.io/tgx-outputs/
-repo_url: https://github.com/TGX-UM/tgx-outputs
-repo_name: TGX-UM/tgx-outputs
+  The software, data resources and services from the Chemistry Development Kit ecosystem.
+site_url: https://cdk.github.io/cdk-outputs/
+repo_url: https://github.com/cdk/cdk-outputs
+repo_name: cdk/cdk-outputs
 edit_uri: ""
 docs_dir: docs
 site_dir: site
@@ -15,8 +14,8 @@ theme:
   # The department's own mark, in the white version, because the header is UM's dark
   # blue in both light and dark mode. Both files are in the repository -- nothing here
   # is fetched at render time.
-  logo: assets/images/tgx-logo-white.png
-  favicon: assets/images/tgx-icon.png
+  logo: assets/images/logos/cdk.png
+  favicon: assets/images/cdk_favicon.ico
   # UM's house style specifies Thesis Sans, which is licensed and cannot be shipped.
   # The university's own web guidance names Open Sans as its approved substitute, so
   # that is what the site uses -- served from assets/fonts/, not from Google, which
