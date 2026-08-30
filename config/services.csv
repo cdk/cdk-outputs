@@ -1,2 +1,2 @@
 project,name,url,what
-cdk,CDK Depict,https://www.simolecule.com/cdkdepict/depict.html,Generate depictions of molecules and reactions from SMILES or SDF.
+cdkdepict,CDK Depict,https://www.simolecule.com/cdkdepict/depict.html,Generate depictions of molecules and reactions from SMILES or SDF.
