@@ -1,0 +1,685 @@
+{
+ "collected_on": "2026-08-31",
+ "config_sha": "c01f0d99f0e6",
+ "sources": {
+  "bioconductor": {
+   "status": "degraded",
+   "fetched_at": "2026-08-31T10:52:00+00:00",
+   "collector_version": "1",
+   "record_count": 0,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "records": []
+  },
+  "citations": {
+   "status": "ok",
+   "fetched_at": "2026-08-31T10:52:00+00:00",
+   "collector_version": "2",
+   "record_count": 11,
+   "expected": 7,
+   "found": 7,
+   "unit": "papers",
+   "records": [
+    {
+     "metric": "paper_citations_by_doi",
+     "entity": "10.1021/ci025584y",
+     "value": 1122.0,
+     "extra": {
+      "project": "cdk",
+      "year": 2003,
+      "type": "article",
+      "title": "The Chemistry Development Kit (CDK): An Open-Source Java Library for Chemo- and Bioinforma"
+     }
+    },
+    {
+     "metric": "paper_citations_by_doi",
+     "entity": "10.2174/138161206777585274",
+     "value": 477.0,
+     "extra": {
+      "project": "cdk",
+      "year": 2006,
+      "type": "article",
+      "title": "Recent Developments of the Chemistry Development Kit (CDK) - An Open-Source Java Library f"
+     }
+    },
+    {
+     "metric": "paper_citations_by_doi",
+     "entity": "10.1186/1758-2946-6-3",
+     "value": 35.0,
+     "extra": {
+      "project": "cdk",
+      "year": 2014,
+      "type": "article",
+      "title": "Efficient ring perception for the Chemistry Development Kit"
+     }
+    },
+    {
+     "metric": "paper_citations_by_doi",
+     "entity": "10.1186/s13321-017-0220-4",
+     "value": 593.0,
+     "extra": {
+      "project": "cdk",
+      "year": 2017,
+      "type": "article",
+      "title": "The Chemistry Development Kit (CDK) v2.0: atom typing, depiction, molecular formulas, and "
+     }
+    },
+    {
+     "metric": "paper_citations_by_doi",
+     "entity": "10.3390/50100093",
+     "value": 85.0,
+     "extra": {
+      "project": "jchempaint",
+      "year": 2000,
+      "type": "article",
+      "title": "JChemPaint - Using the Collaborative Forces of the Internet to Develop a Free Editor for 2"
+     }
+    },
+    {
+     "metric": "paper_citations_by_doi",
+     "entity": "10.1186/1471-2105-14-257",
+     "value": 164.0,
+     "extra": {
+      "project": "knimecdk",
+      "year": 2013,
+      "type": "article",
+      "title": "KNIME-CDK: Workflow-driven cheminformatics"
+     }
+    },
+    {
+     "metric": "paper_citations_by_doi",
+     "entity": "10.1186/s13321-022-00656-x",
+     "value": 11.0,
+     "extra": {
+      "project": "scaffolds",
+      "year": 2022,
+      "type": "article",
+      "title": "Scaffold Generator: a Java library implementing molecular scaffold functionalities in the "
+     }
+    },
+    {
+     "metric": "paper_citations",
+     "entity": "cdk",
+     "value": 2227.0,
+     "extra": {
+      "papers": 4
+     }
+    },
+    {
+     "metric": "paper_citations",
+     "entity": "jchempaint",
+     "value": 85.0,
+     "extra": {
+      "papers": 1
+     }
+    },
+    {
+     "metric": "paper_citations",
+     "entity": "knimecdk",
+     "value": 164.0,
+     "extra": {
+      "papers": 1
+     }
+    },
+    {
+     "metric": "paper_citations",
+     "entity": "scaffolds",
+     "value": 11.0,
+     "extra": {
+      "papers": 1
+     }
+    }
+   ]
+  },
+  "dockerhub": {
+   "status": "ok",
+   "fetched_at": "2026-08-31T10:52:00+00:00",
+   "collector_version": "2",
+   "record_count": 1,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "records": [
+    {
+     "metric": "docker_pulls_total",
+     "entity": "simolecule/cdkdepict/",
+     "value": 111233.0,
+     "extra": {
+      "project": "cdkdepict",
+      "last_updated": "2026-03-03"
+     }
+    }
+   ]
+  },
+  "ecosystems": {
+   "status": "degraded",
+   "fetched_at": "2026-08-31T10:52:00+00:00",
+   "collector_version": "4",
+   "record_count": 20,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "records": [
+    {
+     "metric": "registry_breadth",
+     "entity": "cdk",
+     "value": 1,
+     "extra": {
+      "registry": "repo1.maven.org",
+      "package": "org.openscience.cdk:cdk-bundle"
+     }
+    },
+    {
+     "metric": "package_dependents",
+     "entity": "repo1.maven.org/org.openscience.cdk:cdk-bundle",
+     "value": 9.0,
+     "extra": {
+      "project": "cdk",
+      "registry": "repo1.maven.org"
+     }
+    },
+    {
+     "metric": "registry_breadth",
+     "entity": "cdk",
+     "value": 1,
+     "extra": {
+      "registry": "debian-13",
+      "package": "cdk"
+     }
+    },
+    {
+     "metric": "package_dependents",
+     "entity": "debian-13/cdk",
+     "value": 0.0,
+     "extra": {
+      "project": "cdk",
+      "registry": "debian-13"
+     }
+    },
+    {
+     "metric": "registry_breadth",
+     "entity": "cdk",
+     "value": 1,
+     "extra": {
+      "registry": "ubuntu-24.04",
+      "package": "cdk"
+     }
+    },
+    {
+     "metric": "package_dependents",
+     "entity": "ubuntu-24.04/cdk",
+     "value": 0.0,
+     "extra": {
+      "project": "cdk",
+      "registry": "ubuntu-24.04"
+     }
+    },
+    {
+     "metric": "registry_breadth",
+     "entity": "cdk",
+     "value": 1,
+     "extra": {
+      "registry": "conda-forge.org",
+      "package": "cdk"
+     }
+    },
+    {
+     "metric": "package_dependents",
+     "entity": "conda-forge.org/cdk",
+     "value": 0.0,
+     "extra": {
+      "project": "cdk",
+      "registry": "conda-forge.org"
+     }
+    },
+    {
+     "metric": "package_downloads_total",
+     "entity": "conda-forge.org/cdk",
+     "value": 5277.0,
+     "extra": {
+      "project": "cdk",
+      "registry": "conda-forge.org",
+      "period_label": "total",
+      "latest_version": "2.5"
+     }
+    },
+    {
+     "metric": "registry_breadth",
+     "entity": "scaffolds",
+     "value": 1,
+     "extra": {
+      "registry": "repo1.maven.org",
+      "package": "org.openscience.cdk:cdk-scaffold"
+     }
+    },
+    {
+     "metric": "package_dependents",
+     "entity": "repo1.maven.org/org.openscience.cdk:cdk-scaffold",
+     "value": 0.0,
+     "extra": {
+      "project": "scaffolds",
+      "registry": "repo1.maven.org"
+     }
+    },
+    {
+     "metric": "registry_breadth",
+     "entity": "cdkpywrap",
+     "value": 1,
+     "extra": {
+      "registry": "pypi.org",
+      "package": "CDK-pywrapper"
+     }
+    },
+    {
+     "metric": "package_dependents",
+     "entity": "pypi.org/CDK-pywrapper",
+     "value": 0.0,
+     "extra": {
+      "project": "cdkpywrap",
+      "registry": "pypi.org"
+     }
+    },
+    {
+     "metric": "package_downloads_recent",
+     "entity": "pypi.org/CDK-pywrapper",
+     "value": 678.0,
+     "extra": {
+      "project": "cdkpywrap",
+      "registry": "pypi.org",
+      "period_label": "last-month",
+      "latest_version": "1.0.0"
+     }
+    },
+    {
+     "metric": "registry_breadth",
+     "entity": "cdkr",
+     "value": 1,
+     "extra": {
+      "registry": "cran.r-project.org",
+      "package": "rcdk"
+     }
+    },
+    {
+     "metric": "package_dependents",
+     "entity": "cran.r-project.org/rcdk",
+     "value": 7.0,
+     "extra": {
+      "project": "cdkr",
+      "registry": "cran.r-project.org"
+     }
+    },
+    {
+     "metric": "package_downloads_recent",
+     "entity": "cran.r-project.org/rcdk",
+     "value": 1509.0,
+     "extra": {
+      "project": "cdkr",
+      "registry": "cran.r-project.org",
+      "period_label": "last-month",
+      "latest_version": "3.8.2"
+     }
+    },
+    {
+     "metric": "registry_breadth",
+     "entity": "cdkr",
+     "value": 1,
+     "extra": {
+      "registry": "conda-forge.org",
+      "package": "r-rcdk"
+     }
+    },
+    {
+     "metric": "package_dependents",
+     "entity": "conda-forge.org/r-rcdk",
+     "value": 0.0,
+     "extra": {
+      "project": "cdkr",
+      "registry": "conda-forge.org"
+     }
+    },
+    {
+     "metric": "package_downloads_total",
+     "entity": "conda-forge.org/r-rcdk",
+     "value": 67643.0,
+     "extra": {
+      "project": "cdkr",
+      "registry": "conda-forge.org",
+      "period_label": "total",
+      "latest_version": "3.7.0"
+     }
+    }
+   ]
+  },
+  "github": {
+   "status": "ok",
+   "fetched_at": "2026-08-31T10:54:58+00:00",
+   "collector_version": "3",
+   "record_count": 47,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "records": [
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 8,
+     "period": "2009"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 11,
+     "period": "2010"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 17,
+     "period": "2011"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 11,
+     "period": "2012"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 6,
+     "period": "2013"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 6,
+     "period": "2014"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 2,
+     "period": "2015"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 2,
+     "period": "2016"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 4,
+     "period": "2017"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 1,
+     "period": "2018"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 1,
+     "period": "2019"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 2,
+     "period": "2021"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 3,
+     "period": "2022"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 1,
+     "period": "2023"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 2,
+     "period": "2025"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdk",
+     "value": 2,
+     "period": "2026"
+    },
+    {
+     "metric": "latest_release",
+     "entity": "cdk",
+     "value": 1,
+     "extra": {
+      "date": "2026-08-18"
+     }
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkdepict",
+     "value": 1,
+     "period": "2015"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkdepict",
+     "value": 2,
+     "period": "2017"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkdepict",
+     "value": 3,
+     "period": "2018"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkdepict",
+     "value": 1,
+     "period": "2020"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkdepict",
+     "value": 2,
+     "period": "2021"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkdepict",
+     "value": 3,
+     "period": "2022"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkdepict",
+     "value": 1,
+     "period": "2023"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkdepict",
+     "value": 1,
+     "period": "2024"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkdepict",
+     "value": 2,
+     "period": "2025"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkdepict",
+     "value": 2,
+     "period": "2026"
+    },
+    {
+     "metric": "latest_release",
+     "entity": "cdkdepict",
+     "value": 1,
+     "extra": {
+      "date": "2026-04-13"
+     }
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkpywrap",
+     "value": 1,
+     "period": "2026"
+    },
+    {
+     "metric": "latest_release",
+     "entity": "cdkpywrap",
+     "value": 1,
+     "extra": {
+      "date": "2026-07-16"
+     }
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkr",
+     "value": 2,
+     "period": "2010"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkr",
+     "value": 1,
+     "period": "2020"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "cdkr",
+     "value": 1,
+     "period": "2021"
+    },
+    {
+     "metric": "latest_release",
+     "entity": "cdkr",
+     "value": 1,
+     "extra": {
+      "date": "2021-11-24"
+     }
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "jchempaint",
+     "value": 6,
+     "period": "2012"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "jchempaint",
+     "value": 1,
+     "period": "2025"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "jchempaint",
+     "value": 1,
+     "period": "2026"
+    },
+    {
+     "metric": "latest_release",
+     "entity": "jchempaint",
+     "value": 1,
+     "extra": {
+      "date": "2026-04-24"
+     }
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "scaffolds",
+     "value": 2,
+     "period": "2023"
+    },
+    {
+     "metric": "releases_by_year",
+     "entity": "scaffolds",
+     "value": 5,
+     "period": "2026"
+    },
+    {
+     "metric": "latest_release",
+     "entity": "scaffolds",
+     "value": 1,
+     "extra": {
+      "date": "2026-08-18"
+     }
+    },
+    {
+     "metric": "repos_active",
+     "entity": "cdk",
+     "value": 1
+    },
+    {
+     "metric": "repos_active",
+     "entity": "cdkdepict",
+     "value": 1
+    },
+    {
+     "metric": "repos_active",
+     "entity": "cdkpywrap",
+     "value": 1
+    },
+    {
+     "metric": "repos_active",
+     "entity": "cdkr",
+     "value": 1
+    },
+    {
+     "metric": "repos_active",
+     "entity": "jchempaint",
+     "value": 1
+    },
+    {
+     "metric": "repos_active",
+     "entity": "scaffolds",
+     "value": 1
+    }
+   ]
+  },
+  "rsd": {
+   "status": "ok",
+   "fetched_at": "2026-08-31T10:54:59+00:00",
+   "collector_version": "1",
+   "record_count": 1,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "records": [
+    {
+     "metric": "rsd_mentions",
+     "entity": "Chemistry Development Kit",
+     "value": 1849.0,
+     "extra": {
+      "slug": "cdk",
+      "project": "cdk",
+      "contributors": 5
+     }
+    }
+   ]
+  },
+  "wikipathways": {
+   "status": "skipped",
+   "fetched_at": "2026-08-31T10:55:00+00:00",
+   "collector_version": "1",
+   "record_count": 0,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "records": []
+  }
+ }
+}

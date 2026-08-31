@@ -1,0 +1,116 @@
+{
+ "collected_on": "2026-08-31",
+ "sources": [
+  {
+   "source": "bioconductor",
+   "status": "degraded",
+   "age_days": 0.0,
+   "cadence_days": 7,
+   "level": "fresh",
+   "complete": false,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "record_count": 0,
+   "fetched_at": "2026-08-31T10:52:00+00:00"
+  },
+  {
+   "source": "citations",
+   "status": "ok",
+   "age_days": 0.0,
+   "cadence_days": 7,
+   "level": "fresh",
+   "complete": true,
+   "expected": 7,
+   "found": 7,
+   "unit": "papers",
+   "record_count": 11,
+   "fetched_at": "2026-08-31T10:52:00+00:00"
+  },
+  {
+   "source": "dockerhub",
+   "status": "ok",
+   "age_days": 0.0,
+   "cadence_days": 7,
+   "level": "fresh",
+   "complete": true,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "record_count": 1,
+   "fetched_at": "2026-08-31T10:52:00+00:00"
+  },
+  {
+   "source": "ecosystems",
+   "status": "degraded",
+   "age_days": 0.0,
+   "cadence_days": 7,
+   "level": "fresh",
+   "complete": false,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "record_count": 20,
+   "fetched_at": "2026-08-31T10:52:00+00:00"
+  },
+  {
+   "source": "github",
+   "status": "ok",
+   "age_days": 0.0,
+   "cadence_days": 7,
+   "level": "fresh",
+   "complete": true,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "record_count": 47,
+   "fetched_at": "2026-08-31T10:54:58+00:00"
+  },
+  {
+   "source": "rsd",
+   "status": "ok",
+   "age_days": 0.0,
+   "cadence_days": 7,
+   "level": "fresh",
+   "complete": true,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "record_count": 1,
+   "fetched_at": "2026-08-31T10:54:59+00:00"
+  }
+ ],
+ "ok": 4,
+ "refreshed": 6,
+ "incomplete": [
+  {
+   "source": "bioconductor",
+   "status": "degraded",
+   "age_days": 0.0,
+   "cadence_days": 7,
+   "level": "fresh",
+   "complete": false,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "record_count": 0,
+   "fetched_at": "2026-08-31T10:52:00+00:00"
+  },
+  {
+   "source": "ecosystems",
+   "status": "degraded",
+   "age_days": 0.0,
+   "cadence_days": 7,
+   "level": "fresh",
+   "complete": false,
+   "expected": null,
+   "found": null,
+   "unit": "records",
+   "record_count": 20,
+   "fetched_at": "2026-08-31T10:52:00+00:00"
+  }
+ ],
+ "total": 6,
+ "level": "fresh",
+ "summary": "6 of 6 sources refreshed 2026-08-31 \u2014 2 sources incomplete: bioconductor, ecosystems"
+}

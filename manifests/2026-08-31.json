@@ -1,0 +1,159 @@
+{
+ "collected_on": "2026-08-31",
+ "config_sha": "c01f0d99f0e6",
+ "sources": {
+  "bioconductor": {
+   "status": "degraded",
+   "fetched_at": "2026-08-31T10:52:00+00:00",
+   "record_count": 0,
+   "expected": null,
+   "found": null,
+   "quarantined": [],
+   "errors": [
+    "no Bioconductor packages configured"
+   ],
+   "calls": []
+  },
+  "citations": {
+   "status": "ok",
+   "fetched_at": "2026-08-31T10:52:00+00:00",
+   "record_count": 11,
+   "expected": 7,
+   "found": 7,
+   "quarantined": [],
+   "errors": [],
+   "calls": [
+    {
+     "url": "https://api.openalex.org/works",
+     "status": 200,
+     "ok": true,
+     "note": "7 DOIs asked, 7 returned"
+    }
+   ]
+  },
+  "dockerhub": {
+   "status": "ok",
+   "fetched_at": "2026-08-31T10:52:00+00:00",
+   "record_count": 1,
+   "expected": null,
+   "found": null,
+   "quarantined": [],
+   "errors": [],
+   "calls": [
+    {
+     "url": "https://hub.docker.com/v2/repositories/simolecule/cdkdepict//",
+     "status": 200,
+     "ok": true,
+     "note": "cdkdepict"
+    }
+   ]
+  },
+  "ecosystems": {
+   "status": "degraded",
+   "fetched_at": "2026-08-31T10:52:00+00:00",
+   "record_count": 20,
+   "expected": null,
+   "found": null,
+   "quarantined": [],
+   "errors": [
+    "flathub.org/io.github.jchempaint.JChemPaint: GET https://packages.ecosyste.ms/api/v1/registries/flathub.org/packages/io.github.jchempaint.JChemPaint: HTTP 404"
+   ],
+   "calls": [
+    {
+     "url": "https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/org.openscience.cdk:cdk-bundle",
+     "status": 200,
+     "ok": true,
+     "note": "cdk"
+    },
+    {
+     "url": "https://packages.ecosyste.ms/api/v1/registries/debian-13/packages/cdk",
+     "status": 200,
+     "ok": true,
+     "note": "cdk"
+    },
+    {
+     "url": "https://packages.ecosyste.ms/api/v1/registries/ubuntu-24.04/packages/cdk",
+     "status": 200,
+     "ok": true,
+     "note": "cdk"
+    },
+    {
+     "url": "https://packages.ecosyste.ms/api/v1/registries/conda-forge.org/packages/cdk",
+     "status": 200,
+     "ok": true,
+     "note": "cdk"
+    },
+    {
+     "url": "https://packages.ecosyste.ms/api/v1/registries/repo1.maven.org/packages/org.openscience.cdk:cdk-scaffold",
+     "status": 200,
+     "ok": true,
+     "note": "scaffolds"
+    },
+    {
+     "url": "https://packages.ecosyste.ms/api/v1/registries/pypi.org/packages/CDK-pywrapper",
+     "status": 200,
+     "ok": true,
+     "note": "cdkpywrap"
+    },
+    {
+     "url": "https://packages.ecosyste.ms/api/v1/registries/cran.r-project.org/packages/rcdk",
+     "status": 200,
+     "ok": true,
+     "note": "cdkr"
+    },
+    {
+     "url": "https://packages.ecosyste.ms/api/v1/registries/conda-forge.org/packages/r-rcdk",
+     "status": 200,
+     "ok": true,
+     "note": "cdkr"
+    }
+   ]
+  },
+  "github": {
+   "status": "ok",
+   "fetched_at": "2026-08-31T10:54:58+00:00",
+   "record_count": 47,
+   "expected": null,
+   "found": null,
+   "quarantined": [],
+   "errors": [],
+   "calls": [
+    {
+     "url": "https://api.github.com/graphql (8 repositories)",
+     "status": 200,
+     "ok": true,
+     "note": "8 of 8 returned: cdk/cdk, cdk/depict, jchempaint/jchempaint, cdk/nodes4knime-cdk2, cdk/nodes4knime, cdk/cdk-scaffold, OlivierBeq/CDK_pywrapper, CDK-R/cdkr"
+    }
+   ]
+  },
+  "rsd": {
+   "status": "ok",
+   "fetched_at": "2026-08-31T10:54:59+00:00",
+   "record_count": 1,
+   "expected": null,
+   "found": null,
+   "quarantined": [],
+   "errors": [],
+   "calls": [
+    {
+     "url": "https://research-software-directory.org/api/v1/rpc/software_by_organisation?organisation_id=34e58775-bba6-48ee-9e0e-d1821cd33108",
+     "status": 200,
+     "ok": true,
+     "note": "28 software entries"
+    }
+   ]
+  },
+  "wikipathways": {
+   "status": "skipped",
+   "fetched_at": "2026-08-31T10:55:00+00:00",
+   "record_count": 0,
+   "expected": null,
+   "found": null,
+   "quarantined": [],
+   "errors": [
+    "disabled in config/collectors.csv"
+   ],
+   "calls": []
+  }
+ }
+}
