@@ -5,7 +5,7 @@
 
 # CDK Outputs
 
-**[cdk.github.io/cdk-outputs](https://cdk-um.github.io/cdk-outputs/)**
+**[cdk.github.io/cdk-outputs](https://cdk.github.io/cdk-outputs/)**
 
 The software, data resources and services from the Chemistry Development Kit ecosystem.
 
