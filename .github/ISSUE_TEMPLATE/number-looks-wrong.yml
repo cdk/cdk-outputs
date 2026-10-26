@@ -1,0 +1,27 @@
+name: A number looks wrong
+description: The most valuable kind of report. Every figure links to its own data.
+labels: ["data-quality"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing, it may be worth checking the
+        [methodology page](https://tgx-um.github.io/tgx-outputs/methodology/), which
+        gives the exact query behind every figure and what it does not mean.
+  - type: input
+    id: figure
+    attributes:
+      label: Which figure or number?
+      placeholder: "Overview → Citations"
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect, and why?
+      description: If you have a source that disagrees, link it.
+    validations: {required: true}
+  - type: textarea
+    id: csv
+    attributes:
+      label: Anything odd in the CSV behind it?
+      description: Every caption has a "download CSV" link. Optional, but it usually settles the question.

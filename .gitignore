@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.venv/
+# Anchored: an unanchored `site/` also matches src/tgx_outputs/site/, which quietly
+# kept the whole rendering layer out of the repository.
+/site/
+.cache/
+data/raw/
+*.egg-info/
+
+# Snapshots live on the orphan `data` branch, written by the refresh workflow.
+# Keeping them off main keeps `git log main` about code, not about bot commits.
+/data/
+
+# Generated: rebuilt by `tgx derive` and `tgx build` on every run.
+/includes/*.md
+/docs/data/*.csv
+
+# Local only: the staff name list used to resolve ORCIDs. Names and roles are
+# personal data and are deliberately kept out of the repository.
+/staff.local.tsv
