@@ -1,0 +1,14 @@
+{
+  "title": "TGX Outputs: an automated output dashboard for the Department of Translational Genomics",
+  "upload_type": "software",
+  "license": "mit",
+  "creators": [
+    {
+      "name": "Martens, Marvin",
+      "orcid": "0000-0003-2230-0840",
+      "affiliation": "Department of Translational Genomics, Maastricht University"
+    }
+  ],
+  "keywords": ["research output", "bibliometrics", "research software", "open science", "FAIR"],
+  "access_right": "open"
+}

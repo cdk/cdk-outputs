@@ -1,0 +1,48 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -e ".[dev]"
+
+      - name: Validate config against its schemas
+        run: |
+          check-jsonschema --schemafile schemas/sources.schema.json config/sources.yml
+          check-jsonschema --schemafile schemas/exclusions.schema.json config/exclusions.yml
+          check-jsonschema --schemafile schemas/metric_semantics.schema.json config/metric_semantics.yml
+
+      - name: Config consistency
+        run: tgx doctor
+
+      - name: Lint
+        run: ruff check src tests scripts
+
+      # No network. Every collector runs against recorded fixtures, so a failure here
+      # is always our bug and never an upstream outage.
+      - name: Tests (offline)
+        run: pytest -q
+
+      # Strict here, where a human is present to fix a broken link -- unlike the
+      # refresh job, where a link warning must not be able to block a data refresh.
+      - name: Build the site from fixtures, offline
+        run: |
+          tgx collect --replay
+          tgx derive
+          tgx build
+          mkdocs build --strict

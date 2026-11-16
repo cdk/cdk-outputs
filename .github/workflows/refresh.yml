@@ -1,0 +1,135 @@
+name: Refresh and publish
+
+# Weekly. The numbers this page reports move on the scale of weeks, and a nightly
+# schedule would mostly re-collect unchanged data while making `git log` on the data
+# branch unreadable.
+#
+# NOTE FOR WHOEVER MAINTAINS THIS: GitHub disables scheduled workflows in a public
+# repository after 60 days with no repository activity, and it is NOT safe to assume
+# the bot's own data commits count as activity. If nobody has touched this repo in
+# seven weeks, run it manually or push something. The page's freshness banner will go
+# amber and then red on its own, which is the intended warning.
+on:
+  schedule:
+    - cron: "17 4 * * 1"      # Mondays, 04:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "config/**"
+      - "src/**"
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".github/workflows/refresh.yml"
+
+permissions:
+  contents: write        # to push snapshots to the data branch
+  pages: write
+  id-token: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    # Without this, every fork of this repository runs the same schedule against the
+    # same public APIs and gets everyone's shared runner IPs rate-limited.
+    if: github.repository == 'TGX-UM/tgx-outputs'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # requirements.lock pins the dependency tree and nothing else -- it is compiled
+      # from pyproject.toml's dependencies, so it does not contain this project and the
+      # `tgx` console script does not exist until the package itself is installed. The
+      # first run of this job died at `tgx: command not found` because the lock install
+      # succeeded and the `||` fallback therefore never fired. validate.yml installs
+      # with `-e ".[dev]"` and so never saw it.
+      - name: Install
+        run: |
+          pip install --require-hashes -r requirements.lock || pip install -e .
+          pip install --no-deps -e .
+
+      # The previous data branch, so the guards can compare against last week and the
+      # accumulating series are not restarted from scratch every run.
+      - name: Restore previous snapshots
+        run: |
+          git fetch origin data:data 2>/dev/null || echo "no data branch yet (first run)"
+          if git rev-parse --verify data >/dev/null 2>&1; then
+            git archive data | tar -x -C . || true
+          fi
+          ls -la data/snapshots 2>/dev/null | tail -3 || echo "starting with no history"
+
+      - name: Collect
+        env:
+          # The token GitHub issues to this workflow. No stored secret is used
+          # anywhere in this pipeline; see tests/test_no_secrets_required.py.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: tgx collect
+
+      - name: Derive and build
+        run: |
+          tgx derive
+          tgx build
+
+      # Not --strict. A broken relative link in generated markdown must not be able to
+      # stop a data refresh from publishing; strict runs in validate.yml on PRs, where
+      # a human is there to fix it.
+      - name: Render site
+        run: mkdocs build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      # Deploy in THIS job. A push made with GITHUB_TOKEN does not trigger another
+      # workflow, so splitting collection and deployment into two workflows produces a
+      # dashboard that silently stops updating while every run still shows green --
+      # exactly what happened to the project this one is modelled on.
+      - name: Deploy to Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Publish snapshots to the data branch
+        run: |
+          git config user.name "tgx-outputs bot"
+          git config user.email "noreply@github.com"
+          tmp=$(mktemp -d)
+          cp -r data/. "$tmp/"
+          git checkout --orphan data-tmp
+          git rm -rf --cached . >/dev/null 2>&1 || true
+          rm -rf ./* 2>/dev/null || true
+          cp -r "$tmp/." .
+          git add -A
+          git commit -m "data: $(date -u +%Y-%m-%d)" || { echo "nothing changed"; exit 0; }
+          git push --force origin HEAD:data
+
+      - name: Report source health
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          files = sorted(pathlib.Path("data/manifests").glob("*.json"))
+          if not files:
+              sys.exit("no manifest written")
+          m = json.loads(files[-1].read_text())
+          bad = {k: v for k, v in m["sources"].items()
+                 if v["status"] in {"failed", "degraded"}}
+          for name, src in m["sources"].items():
+              print(f"{src['status']:<9} {name:<14} {src['record_count']:>5} records")
+          if bad:
+              print("\n::warning::degraded or failed sources: " + ", ".join(bad))
+              for name, src in bad.items():
+                  for err in src["errors"][:2]:
+                      print(f"::warning title={name}::{err.splitlines()[0][:200]}")
+          PY

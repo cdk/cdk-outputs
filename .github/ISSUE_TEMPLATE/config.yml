@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Remove me from the underlying queries
+    url: https://github.com/TGX-UM/tgx-outputs/blob/main/CONTRIBUTING.md#add-or-remove-an-orcid
+    about: No reason needed and none will be asked for. One line in config/exclusions.yml, or an email.

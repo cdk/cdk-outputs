@@ -1,0 +1,6 @@
+# Configuration changes are reviewed, because they change what the page claims.
+# Note that CODEOWNERS only has effect with branch protection requiring review;
+# without that it is advisory.
+/config/                @TGX-UM/tgx-outputs-maintainers
+/src/tgx_outputs/guards.py   @TGX-UM/tgx-outputs-maintainers
+/docs/not-shown.md      @TGX-UM/tgx-outputs-maintainers
